@@ -1,0 +1,514 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    min-width: 0;
+    color: #000;
+    line-height: 1.5;
+    font-size: 14px;
+    font-weight: 400;
+    background: #000;
+}
+.backcolor{
+    background-color: #2c0903;
+    opacity: 0.5;
+}
+a{
+    color:rgba(255,255,255,.3);
+    text-decoration:none;
+}
+.Navbar{
+    height: 40px;
+    width: 100%;
+    /* padding: 0 40px; */
+    padding-top: 0px;
+    padding-right: 40px;
+    padding-bottom: 0px;
+    padding-left: 40px;
+    
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    color:rgba(255,255,255,.3);
+
+    overflow: hidden;
+    background-color: #2c0903;
+
+}
+.set-margin{
+    height: 40px;
+    font-size: 15px;
+    margin-right: 30px;
+    
+    text-transform: uppercase;
+   
+}
+
+.set-margin2{
+    margin-right: 30px;
+}
+
+.logo{
+    height: 40px;
+    width: 62px;
+    float: left;
+    margin-right: 30px;
+    background-image: url(./image/logo.png);
+    background-repeat: no-repeat;
+    background-position: -18px -75px;
+}
+.icon {
+    width: 12px;
+    height: 7px;
+    display: inline-block;
+    margin-left: 2px;
+    position: relative;
+    background-image: url(./image/logo.png);
+    background-position: -147px -131px;
+    background-repeat: no-repeat;
+
+    transition: color .2s,background-color .2s,border-color .2s;
+    
+}
+
+.item1{
+    height: 40px;
+    width: 450px;
+    float: left;
+    font-size: 15px;
+    line-height: 40px;
+}
+/* .logo,.game,.shop,.news,.electronic-game,.ceremony{
+    margin-right: 30px;
+} */
+.game{
+    display: inline-block;       
+}
+.game:hover{
+    text-shadow: 0 0 15px #fff, 0 0 30px rgba(255,255,255,.3);
+    color: #fff;
+    
+}
+
+.shop{
+    display: inline-block;
+}
+.shop:hover{
+    text-shadow: 0 0 15px #fff, 0 0 30px rgba(255,255,255,.3);
+    color: #fff;
+}
+.news{
+    display: inline-block;
+}
+.news:hover{
+    text-shadow: 0 0 15px #fff, 0 0 30px rgba(255,255,255,.3);
+    color: #fff;
+}
+
+.electronic-game{
+    display: inline-block;
+}
+.electronic-game:hover{
+    text-shadow: 0 0 15px #fff, 0 0 30px rgba(255,255,255,.3);
+    color: #fff;
+}
+
+.ceremony{
+    display: inline-block;
+}
+.ceremony:hover{
+    text-shadow: 0 0 15px #fff, 0 0 30px rgba(255,255,255,.3);
+    color: #fff;
+}
+
+.item2{
+    height: 40px;
+    width: 160px;
+    float: left;
+    font-size: 15px;
+    line-height: 40px;
+    right: 40px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+}
+
+.support{
+    display: inline-block;
+}
+.support:hover{
+    text-shadow: 0 0 15px #fff, 0 0 30px rgba(255,255,255,.3);
+    color: #fff;
+}
+.passport{
+    display: inline-block;
+    margin-left: 30px;
+}
+.passport:hover{
+    text-shadow: 0 0 15px #fff, 0 0 30px rgba(255,255,255,.3);
+    color: #fff;
+}
+
+/*    ////////////////////////    */
+
+.one-container{
+    opacity: 1;
+    background-color: rgba(15, 5, 5, 0.795);
+    display: none;
+    z-index: 200;
+    position: absolute;
+}
+
+.two-container{
+    padding-top: 0px;
+    padding-right: 40px;
+    padding-bottom: 0px;
+    padding-left: 40px;
+
+
+    display: table;
+    position: relative;
+    width: 100%;
+    max-width: 1600px;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+
+    border-top-width: 0px;
+    border-top-style: initial;
+    border-top-color: initial;
+}
+
+.three-container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    padding-right: 0;
+}
+
+.poster{
+    /* width: calc(11.11111% - 17.77778px); */
+    width: 141px;
+    margin-top: 15px;
+
+    position: relative;
+    display: inline-block;
+    height: 180px;
+    min-width: 0;
+    max-width: none;
+    /* overflow: hidden; */
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    box-shadow: 0 8px 17px rgba(0,0,0,.1);
+    /* margin: 0 20px 15px 0; */
+
+    margin-right: 20px;
+    margin-bottom: 15px;
+
+    font-size: 0;
+    /* transition: border-color .2s; */
+    transition-property: border-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+
+    transform: translateZ(0);
+ 
+}
+
+.poster img{
+    position: absolute;
+    left: 50%;
+
+    transform: translateX(-50%);
+    height: 180px;
+    width: 216px;
+
+    transition-property: filter, -webkit-filter;
+    transition-duration: 0.2s, 0.2s;
+    transition-timing-function: ease, ease;
+    transition-delay: 0s, 0s;
+    opacity: 0.85;
+}
+
+.poster img:hover{
+    opacity:1;    
+}
+
+.see{
+    display: block;
+}
+.nosee{
+    display: none;
+}
+
+
+
+/* ///////////////////////////////////// */
+
+.top-nav p {
+    background: url(https://hearthstone.nosdn.127.net/3/minisite/tgt/sprite.png) no-repeat -610px -572px;
+    width: 407px;
+    height: 51px;
+    color: #584734;
+    font-size: 0.875rem;
+    font-weight: 700;
+    font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif!important;
+    z-index: 1;
+    
+    padding: 9px 0 0 50px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    text-align: left;
+
+    display: block;
+    margin-block-start: 5em;
+    margin-block-end: 3em;
+    margin-inline-start: 0px;
+    margin-inline-end: 5px;
+}
+.top-nav p a{
+    color: rgb(28, 37, 37);
+}
+.top-nav p a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.share-item{
+    padding: 50px 200px 00px 50px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    text-align: left;
+
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 40px;
+    font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif!important;
+
+    margin-block-start: 5em;
+    margin-block-end: 3em;
+    margin-inline-start: 0px;
+    margin-inline-end: 5px;
+
+
+}
+.top-nav .share-item  div {
+    background: url(https://blz.nosdn.127.net/1/common/share.png) 0px 0px no-repeat;
+    width: 38px;
+    height: 38px;
+    text-indent: -999rem;
+    cursor: pointer;
+}
+.sina{
+
+}
+
+
+.top-nav .share-item .weixin{
+    background-position: -50px 0px;
+}
+.top-nav .share-item .tieba{
+    background-position: -100px 0px;
+}
+
+.top-nav .share-item .mini{
+    background-position: -150px 0px;
+}
+.sinaGame{
+    display: none;
+}
+.WeChatcode{
+    display: none;
+}
+.BaiduGame{
+    display: none;
+}
+.HeroBarlink{
+    display: none;
+}
+.sina:hover~.sinaGame{
+    display: block;
+}
+.weixin:hover~ .WeChatcode{
+    display: block;
+}
+.tieba:hover~.BaiduGame{
+    display: block;
+}
+.mini:hover~.HeroBarlink{
+    display: block;
+    position: relative;
+    left: 150px;
+}
+.imgSize{
+    width: 160px;
+    height: 160px;
+}
+/* ///////////////////////////// */
+
+.wrapper {
+    overflow-x: hidden;
+    min-height: 100%;
+    width: 100%;
+    max-width: 2600px;
+    margin: 0 auto;
+    border: 0px;
+    outline: 0px;
+    font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif!important;
+    box-sizing: border-box;
+    display: block;
+}
+
+
+
+.inner-Layout{
+    z-index: -100;
+    position: absolute;
+    left: 250px;
+}
+
+
+
+
+.BackgoundVideo{
+    /* object-fit:fill; */
+    height: 2300px;
+    position: absolute;
+    top: 0px;
+    object-fit: cover;
+    max-width: none;
+    background-size: 100%;
+    object-position: center top;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -9999;
+    display: inline-block;
+    
+}
+
+.introduction{
+    padding-top: 80px;
+    margin-top: 70px;
+    height: 300px;
+    max-height: none;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    text-shadow: none;
+    text-align: center;
+    position: relative;
+}
+
+.battleVideo{
+    display: none;    
+    position: absolute;
+    left: 300px;
+}
+
+.word-text:hover~ .battleVideo{
+    display: block;
+}
+.headline{
+    margin-top: 1px;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.5px;
+    line-height: 1;
+
+    font-weight: 700;
+    font-size: 35px;
+    color: rgb(213, 229, 153);
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.word-text{
+    color: cornsilk;
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.center-video{
+    margin-top: 1200px;
+    position: relative;
+    
+
+    max-width: 100%;
+
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+.layout-video{
+    
+}
+.cinema{
+    padding-bottom: 56.25%;
+    background: rgb(0, 0, 0);
+    position: relative;
+    width: 900px;
+    left: 30px;
+
+  
+
+}
+.cinema::before{
+    max-width: none;
+    background-size: contain;
+    width: 120%;
+    height: 130%;
+    top: -10%;
+    left: -10%;
+    
+    content: "";
+    position: absolute;
+    right: 0%;
+    bottom: 0px;
+
+    border-top-color: initial;
+    border-top-style: none;
+    border-top-width: initial;
+    border-right-color: initial;
+    border-right-style: none;
+    border-right-width: initial;
+    border-bottom-color: initial;
+    border-bottom-style: none;
+    border-bottom-width: initial;
+    border-left-color: initial;
+    border-left-style: none;
+    border-left-width: initial;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+
+    background-repeat: no-repeat;
+    
+    background-position-x: 50%;
+    background-position-y: center;
+    z-index: 2;
+
+    background-image: url(./image/相框.webp);
+}
+.cinema-video{
+    width: 900px;
+    height: 506px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    max-width: 100%;
+    display:inline-block;
+    object-fit: contain;
+}

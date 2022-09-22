@@ -1,0 +1,172 @@
+.clearfix::after{
+    content:"";
+    clear: both;
+    display: block;
+
+}
+
+.intro{
+    width: 980px;
+    border-bottom: 1px solid #ddd;
+    height: 27px;
+    text-align: center;
+    margin: 0 auto;
+}
+.intro span{
+    font-size: 40px;
+    background: white;
+    padding: 0 21px;
+}
+.register{
+    width: 980px;
+    margin: 0 auto;
+    padding: 80px 0 0;
+}
+.register .el-select{
+    width: 420px;
+    height: 40px;
+    margin: 0 auto;
+
+}
+.register .hidden-group{
+    width: 420px;
+    height: 40px;
+    margin: 0 auto;
+}
+.register .el-select input[type="text"],.register .el-select input[type="button"]{
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #dcdfe6;
+    box-sizing: border-box;
+}
+.register input[type="text"]{
+    padding-left: 10px;
+}
+.register input[type="text"]::placeholder{
+    font: 400 13.3333px Arial;
+    color: #ccc;
+}
+.register .el-select input[type="text"]:focus{
+    border-color: #00a1d6;
+}
+.register .el-select .area-select {
+    position: relative;
+    float: left;
+}
+.register .el-select .area-select span{
+    height: 40px;
+    color: rgb(144, 147, 153);
+    display: block;
+    border: 1px solid #dcdfe6;
+    border-right: none;
+    border-radius: 4px 0 0  4px;
+    padding-left: 20px;
+    width:130px;
+    line-height:40px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.register .el-select .area-select ul{
+    width: 130px;
+    height: 255px;
+    position: absolute;
+    z-index: 1;
+    font-size: 14px;
+    
+    color: #00A1D6;
+    border: 1px solid #dcdfe6;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    top: -30px;
+    background: rgba(255, 255, 255, 1);
+    display: none;
+}
+.register .el-select .area-select ul li{
+    font-weight: bold;
+    height: 34px;
+    line-height: 34px;
+    padding: 0 20px;
+    cursor: pointer;
+    
+}
+.register .el-select .area-select ul li:hover{
+    background-color: #f5f7fa;
+
+}
+.register .el-select input.area-phone{
+    float: left;
+    width: 290px;
+    box-sizing: border-box;
+    border-radius: 0 4px 4px 0;
+}
+.register .phone-code{
+    position: relative;
+}
+.register .el-select.phone-code input[type="button"]{
+    width: 135px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    background-color: #00a1d6;
+    border-color: #00a1d6;
+    color: #fff;
+    cursor: pointer;
+}
+.register .el-select.phone-code input[type="button"]:hover{
+    background: #33b4de;
+
+}
+.register .protocol{
+    margin: 0  auto;
+    height: 30px;
+}
+.register .protocol .protocol-box{
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    border: 1px solid ;
+    border-radius: 4px;
+    position: relative;
+}
+.register .protocol label{
+    display: block;
+    margin: auto 0;
+    height: 20.8px;
+
+}
+.register .protocol input{
+    display: none;
+}
+.register .protocol input:checked+ .protocol-box::after{
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: #00a1d6;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto auto;
+}
+.register .protocol  span{
+    font-size: 12px;
+}
+.register .reg-btn{
+
+}
+.register .reg-btn input{
+    cursor: not-allowed;
+    color: rgba(0,0,0,.25);
+}
+.register .dir-login{
+    text-align: right;
+}
+.register a{
+    color: #00a1d6;
+    font-size: 12px;
+
+}
+

@@ -1,0 +1,20 @@
+.shortcut .w .account_bar  .bar .icon-ai-arrow-down{
+    vertical-align: top;
+}
+/* 每一个子项的hover时的背景颜色 */
+.bg_blank:hover{
+    background-color:white;
+}
+/* 下拉菜单的背景颜色 */
+.bg-color{
+    background-color: #fff;
+    z-index: 2;
+}
+.va-super{
+    vertical-align: super;
+}
+
+/* BFC 两栏布局 */
+.over-hd{
+    overflow: hidden;
+}
